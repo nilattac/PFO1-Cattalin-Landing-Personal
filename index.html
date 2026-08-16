@@ -11,7 +11,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-
   <header>
     <nav aria-label="Navegación principal">
       <a href="#inicio" class="logo">EC</a>
@@ -25,10 +24,9 @@
   </header>
 
   <main>
-
     <section id="inicio" aria-labelledby="hero-title">
       <h1 id="hero-title">Ezequiel <span>Cattalín</span></h1>
-      <p class="rol"><!-- Tu rol o tagline, ej: "Desarrollador Frontend" --></p>
+      <p class="rol">Ingeniero Civil</p>
       <a
         href="https://github.com/nilattac"
         class="github-link"
@@ -36,16 +34,20 @@
         rel="noopener noreferrer"
         aria-label="Ver perfil de GitHub de Ezequiel Cattalín"
       >
-        <img src="assets/GitHub_Invertocat_Black_Clearspace.svg" alt="" width="24" height="24">
+        <img src="assets/GitHub_Invertocat_Black_Clearspace.svg" alt="Logo de GitHub" width="24" height="24">
         Ver mi GitHub
       </a>
     </section>
 
     <section id="presentacion" aria-labelledby="presentacion-title">
       <h2 id="presentacion-title">Sobre mí</h2>
-      <img src="assets/carompa.jpeg" alt="" class="foto-perfil">
+      <img src="assets/carompa.jpeg" alt="Foto de perfil" class="foto-perfil">
       <p>
-        Soy un ingeniero civil con experiencia en programación. Me apasiona crear soluciones innovadoras y eficientes, combinando mis conocimientos técnicos con un enfoque creativo. Siempre estoy buscando aprender nuevas tecnologías y mejorar mis habilidades para enfrentar desafíos en el mundo digital.
+        Soy un ingeniero civil con experiencia e interés en el ámbito de la programación y la tecnología. 
+        Me apasiona desarrollar soluciones innovadoras y eficientes, combinando mis conocimientos técnicos 
+        y mi experiencia profesional con un enfoque creativo y orientado a la resolución de problemas.
+        Actualmente, estoy incursionando en el desarrollo de software y la docencia, dos áreas que me 
+        permiten seguir aprendiendo, compartir conocimientos y enfrentar nuevos desafíos. 
       </p>
     </section>
 
@@ -53,37 +55,70 @@
       <h2 id="habilidades-title">Habilidades</h2>
       <ul class="skills-grid">
         <li>
-          <img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/autocad/default.svg" alt="">
-          <span>Autocad scripts</span>
+          <button
+            type="button"
+            class="skill-btn"
+            data-img="assets/skill-Autocad.gif"
+            data-alt="Comando propio de autocad ejecutándose en pantalla"
+          >
+          <img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/autocad/default.svg" alt="Logo de Autocad">
+          <span>Autocad<br>scripts</span>
         </li>
         <li>
-          <img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/react/default.svg" alt="">
-          <span>App development</span>
+          <button
+            type="button"
+            class="skill-btn"
+            data-img="assets/skill-App.jpg"
+            data-alt="Desarrollo de aplicación móvil"
+          >
+          <img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/react/default.svg" alt="Logo de React">
+          <span>App<br>development</span>
         </li>
         <li>
-          <img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/python/default.svg" alt="">
-          <span>Python programming</span>
+          <button
+            type="button"
+            class="skill-btn"
+            data-img="assets/skill-Python.jpg"
+            data-alt="Programación en Python"
+          >
+          <img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/python/default.svg" alt="Logo de Python">
+          <span>Python<br>programming</span>
         </li>
         <li>
-          <img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/javascript/default.svg" alt="">
-          <span>JavaScript development</span>
-        </li>
-        <li>
-          <img src="assets/icons8-project-management-50.png" alt="">
-          <span>Project management</span>
+          <button
+            type="button"
+            class="skill-btn"
+            data-img="assets/skill-Project-Management.jpg"
+            data-alt="Autor farmeando aura en un túnel en construcción"
+          >
+          <img src="assets/icons8-project-management-50.png" alt="Logo de gestión de proyectos">
+          <span>Project<br>management</span>
         </li>
       </ul>
     </section>
 
     <section id="personal" aria-labelledby="personal-title">
       <h2 id="personal-title">Mas alla del teclado</h2>
-      <img src="assets/" alt="" class="personal-imagen">
       <p>
-        Soy una persona curiosa y orientada a la resolución de problemas, con interés en la tecnología, el desarrollo de software y la ingeniería. Me gusta aprender nuevas herramientas, enfrentar desafíos y transformar ideas en soluciones concretas.
+        Me considero una persona curiosa y con una sed constante de aprendizaje. 
+        Me gusta explorar nuevas ideas, adquirir conocimientos y encontrar nuevas formas de hacer las cosas. 
+        Disfruto especialmente de aquellos proyectos que me permiten combinar creatividad, aprendizaje 
+        y la posibilidad de transformar una idea en algo concreto.
+        También disfruto de los desafíos físicos y de las actividades al aire libre, 
+        especialmente aquellas que me permiten estar en contacto con la naturaleza y salir de la rutina.
       </p>
+      <img src="assets/imagenPersonal2.jpeg" alt="Imagen personal" class="personal-imagen">
+      <img src="assets/imagenPersonal.jpeg" alt="Imagen personal" class="personal-imagen">
       <p>
-        En mi tiempo libre, disfruto de actividades al aire libre y la lectura.
+        Me atraen particularmente los proyectos que implican aprender haciendo. 
+        Un ejemplo de esto es una idea que tengo para el futuro, cuando termine de refaccionar mi casa, 
+        probablemente me embarque en el desafío de construir mi propio kayak de madera. 
+        Más allá del resultado final, me interesa todo el proceso: investigar, aprender sobre los 
+        materiales y las técnicas, resolver los problemas que aparezcan y finalmente convertir un 
+        proyecto que comenzó como una idea en algo que pueda utilizar.
       </p>
+        
+
     </section>
 
     <section id="contacto" aria-labelledby="contacto-title">
@@ -134,8 +169,16 @@
         <button type="submit">Enviar mensaje</button>
       </form>
     </section>
-
   </main>
+
+    <!-- Modal / Lightbox para mostrar la imagen de cada habilidad -->
+  <div class="modal" id="skill-modal" aria-hidden="true">
+    <div class="modal__overlay" data-close></div>
+    <div class="modal__content" role="dialog" aria-modal="true" aria-label="Detalle de habilidad">
+      <button type="button" class="modal__close" data-close aria-label="Cerrar">↓</button>
+      <img src="" alt="" id="modal-img">
+    </div>
+  </div>
 
   <footer>
     <a
@@ -144,11 +187,13 @@
       rel="noopener noreferrer"
       aria-label="Perfil de GitHub de Ezequiel Cattalín"
     >
-      <img src="assets/GitHub_Invertocat_Black_Clearspace.svg" alt="" width="20" height="20">
+      <img src="assets/GitHub_Invertocat_Black_Clearspace.svg" alt="Logo de GitHub" width="20" height="20">
       github.com/nilattac
     </a>
     <p>© 2026 Ezequiel Cattalín. Todos los derechos reservados.</p>
   </footer>
+
+  <script src="script.js"></script>
 
 </body>
 </html>
