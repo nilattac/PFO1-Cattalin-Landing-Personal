@@ -52,7 +52,7 @@ html {
 body {
   margin: 0;
   background-color: var(--bg);
-  /* Textura de fondo opcional para todo el sitio*/
+  /* Textura de fondo para todo el sitio*/
   background-image: linear-gradient(rgba(20, 22, 26, 0.94), rgba(20, 22, 26, 0.94)), url("assets/textura-fondo.jpg");
   background-size: cover;
   background-position: center;

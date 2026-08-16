@@ -52,4 +52,35 @@ document.addEventListener("DOMContentLoaded", () => {
       closeModal();
     }
   });
+
+  // =========================================
+  // ENVÍO DEL FORMULARIO DE CONTACTO
+  // =========================================
+  const formulario = document.getElementById('form-contacto');
+
+  // El condicional evita errores si cambias de página y el formulario no existe
+  if (formulario) {
+    formulario.addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      const formData = new FormData(formulario);
+      
+      fetch('https://web3forms.com', {
+        method: 'POST',
+        body: formData
+      })
+      .then(async (response) => {
+        if (response.status === 200) {
+          alert("¡Mensaje enviado con éxito! Me pondré en contacto pronto.");
+          formulario.reset();
+        } else {
+          alert("Hubo un error al enviar el mensaje. Inténtalo de nuevo.");
+        }
+      })
+      .catch(error => {
+        console.log(error);
+        alert("Algo salió mal. Por favor, comprueba tu conexión.");
+      });
+    });
+  }
 });
