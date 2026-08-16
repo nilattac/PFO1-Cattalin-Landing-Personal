@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ezequiel Cattalín | Portafolio</title>
+  <meta name="description" content="Portafolio profesional de Ezequiel Cattalín">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <nav aria-label="Navegación principal">
+      <a href="#inicio" class="logo">EC</a>
+      <ul>
+        <li><a href="#presentacion">Sobre mí</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#personal">Personal</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="inicio" aria-labelledby="hero-title">
+      <h1 id="hero-title">Ezequiel <span>Cattalín</span></h1>
+      <p class="rol"><!-- Tu rol o tagline, ej: "Desarrollador Frontend" --></p>
+      <a
+        href="https://github.com/nilattac"
+        class="github-link"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Ver perfil de GitHub de Ezequiel Cattalín"
+      >
+        <img src="assets/GitHub_Invertocat_Black_Clearspace.svg" alt="" width="24" height="24">
+        Ver mi GitHub
+      </a>
+    </section>
+
+    <section id="presentacion" aria-labelledby="presentacion-title">
+      <h2 id="presentacion-title">Sobre mí</h2>
+      <img src="assets/carompa.jpeg" alt="" class="foto-perfil">
+      <p>
+        Soy un ingeniero civil con experiencia en programación. Me apasiona crear soluciones innovadoras y eficientes, combinando mis conocimientos técnicos con un enfoque creativo. Siempre estoy buscando aprender nuevas tecnologías y mejorar mis habilidades para enfrentar desafíos en el mundo digital.
+      </p>
+    </section>
+
+    <section id="habilidades" aria-labelledby="habilidades-title">
+      <h2 id="habilidades-title">Habilidades</h2>
+      <ul class="skills-grid">
+        <li>
+          <img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/autocad/default.svg" alt="">
+          <span>Autocad scripts</span>
+        </li>
+        <li>
+          <img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/react/default.svg" alt="">
+          <span>App development</span>
+        </li>
+        <li>
+          <img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/python/default.svg" alt="">
+          <span>Python programming</span>
+        </li>
+        <li>
+          <img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/javascript/default.svg" alt="">
+          <span>JavaScript development</span>
+        </li>
+        <li>
+          <img src="assets/icons8-project-management-50.png" alt="">
+          <span>Project management</span>
+        </li>
+      </ul>
+    </section>
+
+    <section id="personal" aria-labelledby="personal-title">
+      <h2 id="personal-title">Mas alla del teclado</h2>
+      <img src="assets/" alt="" class="personal-imagen">
+      <p>
+        Soy una persona curiosa y orientada a la resolución de problemas, con interés en la tecnología, el desarrollo de software y la ingeniería. Me gusta aprender nuevas herramientas, enfrentar desafíos y transformar ideas en soluciones concretas.
+      </p>
+      <p>
+        En mi tiempo libre, disfruto de actividades al aire libre y la lectura.
+      </p>
+    </section>
+
+    <section id="contacto" aria-labelledby="contacto-title">
+      <h2 id="contacto-title">Contacto</h2>
+      <form action="#" method="POST" aria-label="Formulario de contacto">
+
+        <div class="form-group">
+          <label for="nombre">Nombre</label>
+          <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            autocomplete="name"
+            required
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="email">Correo electrónico</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            autocomplete="email"
+            required
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="asunto">Asunto</label>
+          <input
+            type="text"
+            id="asunto"
+            name="asunto"
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="mensaje">Mensaje</label>
+          <textarea
+            id="mensaje"
+            name="mensaje"
+            rows="6"
+            required
+          ></textarea>
+        </div>
+
+        <button type="submit">Enviar mensaje</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <a
+      href="https://github.com/nilattac"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Perfil de GitHub de Ezequiel Cattalín"
+    >
+      <img src="assets/GitHub_Invertocat_Black_Clearspace.svg" alt="" width="20" height="20">
+      github.com/nilattac
+    </a>
+    <p>© 2026 Ezequiel Cattalín. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
