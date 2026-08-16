@@ -54,31 +54,42 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // =========================================
-  // ENVÍO DEL FORMULARIO DE CONTACTO
+  // ENVÍO DEL FORMULARIO DE CONTACTO (CORREGIDO)
   // =========================================
   const formulario = document.getElementById('form-contacto');
 
-  // El condicional evita errores si cambias de página y el formulario no existe
   if (formulario) {
     formulario.addEventListener('submit', function(e) {
       e.preventDefault();
       
       const formData = new FormData(formulario);
       
-      fetch('https://web3forms.com', {
+      // Convertimos el FormData a un objeto clave-valor plano de JavaScript
+      const object = Object.fromEntries(formData);
+      const json = JSON.stringify(object);
+      
+      // Enviamos el formato exacto que Web3Forms acepta para fetch sin CORS
+      fetch('https://api.web3forms.com/submit', {
         method: 'POST',
-        body: formData
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: json
       })
       .then(async (response) => {
+        const resJson = await response.json();
+        
         if (response.status === 200) {
           alert("¡Mensaje enviado con éxito! Me pondré en contacto pronto.");
           formulario.reset();
         } else {
+          console.log("Error de la API:", resJson);
           alert("Hubo un error al enviar el mensaje. Inténtalo de nuevo.");
         }
       })
       .catch(error => {
-        console.log(error);
+        console.log("Error de red:", error);
         alert("Algo salió mal. Por favor, comprueba tu conexión.");
       });
     });
