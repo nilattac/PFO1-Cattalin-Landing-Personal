@@ -4,7 +4,14 @@ https://pfo-1-cattalin-landing-personal.vercel.app/
 
 [GitHub: NILATTAC](https://github.com/nilattac)
 
-IA utilizada: Claude (Sonnet 5 - Gratuito)
+IA utilizadas: 
+- Código: Claude (Sonnet 5 - Gratuito) 
+    * Experiencia: Desarrollo personal de comando de Autocad (DLL) y debugeado durante aprendizaje.
+- Preguntas en general: Gemini (Gratuito)
+    * Experiencia: Preguntas generales como puntapie inicial de investigación.
+- Generacion de imagenes: DaVinci (Nano Banana - Gratuito)
+    * Experiencia: Modificacion de fotografias de edificios y 3d esquematicos para visualizacion de obra terminada por parte de clientes.
+
 
 Procedimiento de trabajo:
 1. Busqué formatos de Portfolios de otras personas.
@@ -48,4 +55,11 @@ De las alternativas que me recomendó usar elegí Web3Forms.
 
 16. Hago otro deploy para saber si el formulario está funcionando. Agrego acentos faltantes.
 
-//continuara...
+17. Habia un error y lo corrijo con ayuda de Gemini
+
+18. Cambio la imagenes place holder por otras generadas con DaVinci
+
+19. Para probar otros estilos le pedi a claude que genere otros CSS
+"Crea otro CSS que el estilo sea 'El señor de los anillos'"
+"Crea otro CSS que el estilo sea 'Club Atlético Colón'"
+"Crea otro CSS que el estilo sea 'Chocolate'"
